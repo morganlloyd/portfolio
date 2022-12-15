@@ -799,7 +799,15 @@ header a i:hover, header a i:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+}
+@media (max-width: 1080px) {
+  .contact .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .contact .rightColumn, .contact .leftColumn {
   -webkit-box-flex: 1;
@@ -809,9 +817,25 @@ header a i:hover, header a i:focus {
 .contact .contactTxt {
   margin-bottom: 50px;
 }
+@media (max-width: 1080px) {
+  .contact .contactTxt {
+    text-align: center;
+  }
+}
 .contact .contactLinks {
   font-size: 50px;
   font-size: 2.5rem;
+}
+@media (max-width: 1080px) {
+  .contact .contactLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
 }
 .contact ul {
   display: -webkit-box;
@@ -821,4 +845,33 @@ header a i:hover, header a i:focus {
 }
 .contact a {
   color: #1e1c21;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.contact form input, .contact form textarea {
+  text-transform: uppercase;
+  width: 90%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.contact form button {
+  width: 30%;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  background-color: none;
 }

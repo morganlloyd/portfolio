@@ -21,7 +21,11 @@
 
     .contactContainer {
         display: flex;
-        gap: 20px;
+        gap: 30px;
+
+        @include breakpoint(medium) {
+            flex-direction: column;
+        }
     }
 
     .rightColumn, .leftColumn {
@@ -30,9 +34,20 @@
 
     .contactTxt {
         margin-bottom: 50px;
+
+        @include breakpoint(medium) {
+            text-align: center;
+        }
     }
     .contactLinks {
         @include fontSize(50);
+
+        @include breakpoint(medium) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
     }
 
     ul {
@@ -45,5 +60,28 @@
         color: $black;
     }
 
-    
+    form {
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        input, textarea {
+            text-transform: uppercase;
+            width: 90%;
+            margin-bottom: 10px;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+        button {
+            width: 30%;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            background-color: none;
+            
+        }
+    }
 }
