@@ -41,6 +41,7 @@
     }
     .contactLinks {
         @include fontSize(50);
+        
 
         @include breakpoint(medium) {
             display: flex;
@@ -58,6 +59,7 @@
 
     a {
         color: $black;
+        
     }
 
     form {
@@ -80,7 +82,13 @@
             width: 30%;
             text-transform: uppercase;
             padding: 10px 0px;
-            background-color: none;
+            background-color: transparent;
+            border: 2px solid $black;
+            transition: .2s ease;
+
+            &:hover, &:focus {
+                border: 2px solid $neonYellow;
+            }
             
         }
     }

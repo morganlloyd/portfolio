@@ -50,6 +50,7 @@ h1 {
 }
 
 h2 {
+    font-family: $RomanceFont;
     @include fontSize(40);
     @include breakpoint(smaller) {
         @include fontSize(30);
