@@ -556,8 +556,8 @@ header .headerTxt p {
 }
 @media (max-width: 570px) {
   header .headerTxt p {
-    font-size: 20px;
-    font-size: 1rem;
+    font-size: 25px;
+    font-size: 1.25rem;
   }
 }
 header .headerTxt .highlight {
