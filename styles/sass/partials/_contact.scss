@@ -27,14 +27,16 @@
     .rightColumn, .leftColumn {
         flex: 1;
     }
+
+    .contactTxt {
+        margin-bottom: 50px;
+    }
     .contactLinks {
         @include fontSize(50);
-        
     }
 
     ul {
         display: flex;
-        justify-content: center;
         gap: 50px;
 
     }
