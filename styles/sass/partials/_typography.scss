@@ -53,7 +53,7 @@ h2 {
     font-family: $RomanceFont;
     @include fontSize(40);
     @include breakpoint(smaller) {
-        @include fontSize(30);
+        @include fontSize(35);
     }
     font-weight: normal;
 }
@@ -67,6 +67,10 @@ p {
     letter-spacing: 2.5px;
     line-height: 30px;
     @include fontSize(20);
+
+    @include breakpoint(small) {
+        @include fontSize(18);
+    }
 }
 
 span {

@@ -54,5 +54,8 @@ footer {
 
     P {
         margin: 0;
+        @include breakpoint(smaller) {
+            @include fontSize(18);
+        }
     }
 }

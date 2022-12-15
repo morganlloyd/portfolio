@@ -281,8 +281,8 @@ h2 {
 }
 @media (max-width: 570px) {
   h2 {
-    font-size: 30px;
-    font-size: 1.5rem;
+    font-size: 35px;
+    font-size: 1.75rem;
   }
 }
 
@@ -296,6 +296,12 @@ p {
   line-height: 30px;
   font-size: 20px;
   font-size: 1rem;
+}
+@media (max-width: 740px) {
+  p {
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
 }
 
 span {
@@ -357,6 +363,12 @@ footer {
 }
 footer P {
   margin: 0;
+}
+@media (max-width: 570px) {
+  footer P {
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
 }
 
 .mobileNav {
