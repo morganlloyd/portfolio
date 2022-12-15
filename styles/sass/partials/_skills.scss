@@ -1,0 +1,45 @@
+.skills {
+    padding-top: 50px 0px;
+    h2 {
+        
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            width: 200px;
+            background: $neonYellow;
+        }
+    }
+
+
+    .skillContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        
+    }
+
+    .skillItem {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 7px
+    }
+
+    i {
+        @include fontSize(50);
+    }
+
+    span {
+        @include fontSize(18);
+        text-transform: uppercase;
+    }
+
+}

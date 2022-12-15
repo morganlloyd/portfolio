@@ -1,0 +1,45 @@
+.about {
+    border-top: black solid 2px;
+    padding-bottom: 0px;
+    
+    .alignRight {
+        text-align: right;
+    }
+    
+    h2 {
+        display: inline-block;
+        position: relative;
+    
+        &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: -6px;
+            left: 1;
+            right: 0;
+            width: 300px;
+            background: $neonYellow;
+        }
+    }
+     
+    .aboutContainer {
+        display: flex;
+        gap: 40px;
+    }
+
+    .aboutImg, .aboutTxt {
+        flex: 1;
+    }
+
+    img {
+        height: 300px;
+        width: 600px;
+    }
+
+
+
+
+    
+
+
+}

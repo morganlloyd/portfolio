@@ -1,0 +1,57 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $lightBeige;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+section {
+    padding: 100px 0px;
+}
+
+h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 100px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+footer {
+    border-top: 2px $black solid;
+    text-align: center;
+    color: $black;
+    padding: 20px 0px;
+
+    P {
+        margin: 0;
+    }
+}

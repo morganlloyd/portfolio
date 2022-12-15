@@ -1,0 +1,47 @@
+.contact {
+    border-top: 2px solid black;
+
+    h2 {
+        display: inline-block;
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            width: 370px;
+            background: $neonYellow;
+        }
+    }
+    
+    
+
+    .contactContainer {
+        display: flex;
+        gap: 20px;
+    }
+
+    .rightColumn, .leftColumn {
+        flex: 1;
+    }
+    .contactLinks {
+        @include fontSize(50);
+        
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    a {
+        color: $black;
+    }
+
+    
+}

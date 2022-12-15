@@ -1,0 +1,230 @@
+// mobile nav
+
+.mobileNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    
+
+    .logo {
+        font-family: $CoconatBoldFont;
+        @include fontSize(30);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    i {
+        @include fontSize(30);
+    }
+
+    
+}
+
+// hiding the mobile nav
+
+.hidden {
+    display: none;
+        @include breakpoint(small) {
+            display: flex;
+        }
+}
+
+// desktop nav
+
+.navContainer {
+    display: flex;
+        @include breakpoint(small) {
+            display: none;
+        }
+        
+    justify-content: space-between;
+    padding: 30px 30px;
+
+    .logo {
+        font-family: $CoconatBoldFont;
+        @include fontSize(30);
+        
+        a {
+        text-decoration: none;
+        color: $black;
+        }
+
+    }
+    
+    .menuLink {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: 1px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.25s ease-out;
+            background: $neonYellow;
+
+            
+        }
+
+        &:hover::after,
+        &:focus::after {
+                transform: scaleX(1);
+        
+        }
+        
+    }
+
+    .mainNav {
+        text-transform: uppercase;
+        
+    }
+
+    ul {
+        display: flex;
+        gap: 40px;
+        padding-top: 10px;
+    }
+
+}
+
+// slide out menu
+
+.slideOutMenu {
+    background-color: $lightBeige;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100;
+    position: fixed;
+    top: 0%;
+    left: -10000px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @include fontSize(40);
+    padding: 0px 30px;
+    
+    li {
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black;
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: 1px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.25s ease-out;
+            background: $neonYellow;
+        
+        
+        }
+        
+        &:hover::after,
+        &:focus::after {
+            transform: scaleX(1);
+        
+        }
+    }
+    
+}
+
+// .navContainer {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-top: 20px;
+// }
+
+// .logo {
+
+//     font-family: $CoconatBoldFont;
+//     @include fontSize(30);
+
+
+// }
+// .mainNav {
+
+//     ul {
+//         display: flex;
+//         justify-content: right;
+//         gap: 20px;
+
+//     }
+//     a {
+//         text-decoration: none;
+//         text-transform: uppercase;
+//         font-weight: normal;
+//         letter-spacing: 1.5px;
+//         color: $black;
+//         display: inline-block;
+//         position: relative;
+
+//         &::after {
+//             content: '';
+//             position: absolute;
+//             width: 100%;
+//             transform: scaleX(0);
+//             height: 1px;
+//             bottom: 0;
+//             left: 0;
+//             background: $black;
+//             transform-origin: bottom right;
+//             transition: transform .25s ease-out;
+
+
+//         }
+//         &:hover::after,
+//         &:focus::after {
+//             transform: scaleX(1);
+//             transform-origin: bottom left;
+
+//         }
+
+//         // &:hover,
+//         // &:focus {
+
+//         // }
+
+//     }
+// }
+
+// //mobile nav & menu icon styles
+
+// .mobileNav {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 20px 0px;
+
+//     a {
+//         text-decoration: none;
+//         padding: 0;
+//     }
+
+//     i {
+//         @include fontSize(30);
+//     }
+
+// }
+
+// .hidden {
+//     display: none;
+// }

@@ -1,0 +1,58 @@
+header {
+    min-height: 100vh;
+    position: relative;
+
+    .headerTxt {
+        position: absolute;
+        top: 40%;
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            @include fontSize(40);
+                @include breakpoint(smaller) {
+                    @include fontSize(30);
+                }
+            letter-spacing: 3px;
+            margin-top: 0px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $black;
+            
+        }
+        .highlight {
+            background: linear-gradient(to bottom,
+                transparent 50%,
+                $neonYellow 50%);
+        }
+    }
+
+    a {
+        color: black;
+        padding: 10px;
+
+        i {
+            @include fontSize(70);
+            
+
+            &:hover,
+            &:focus {
+                color: $neonYellow;
+                transition: 0.3s;
+            }
+        }
+
+    }
+
+    // .downArrow {
+    //     position: absolute;
+    //     bottom: 10%;
+    //     right: 10%;
+    //     @include fontSize(80);
+    // }
+    
+    
+    
+}
