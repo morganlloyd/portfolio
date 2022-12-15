@@ -344,6 +344,7 @@ button {
 footer {
   border-top: 2px #1e1c21 solid;
   text-align: center;
+  text-transform: uppercase;
   color: #1e1c21;
   padding: 20px 0px;
 }
@@ -411,8 +412,9 @@ footer P {
 }
 .navContainer .menuLink {
   text-decoration: none;
+  letter-spacing: 1.5px;
   color: black;
-  cursor: pointer;
+  padding: 10px 0px;
   position: relative;
 }
 .navContainer .menuLink::after {
@@ -484,6 +486,7 @@ footer P {
 .slideOutMenu a {
   text-decoration: none;
   text-transform: uppercase;
+  padding: 7px 0px;
   color: #1e1c21;
   position: relative;
 }
@@ -717,15 +720,42 @@ header a i:hover, header a i:focus {
       -ms-flex: 1;
           flex: 1;
 }
+.projects .projectInfo .used {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
 .projects .projectInfo .projectLinks {
   margin-top: 30px;
 }
 .projects .projectInfo .projectLinks a {
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  padding: 1px 10px;
-  margin-right: 10px;
+  text-transform: uppercase;
+  color: #1e1c21;
+  padding: 10px 0;
+  margin-right: 20px;
+  position: relative;
+}
+.projects .projectInfo .projectLinks a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  background: #d8fc89;
+}
+.projects .projectInfo .projectLinks a:hover::after, .projects .projectInfo .projectLinks a:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 .projects .flipped {
   text-align: right;
