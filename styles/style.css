@@ -601,7 +601,10 @@ header a i:hover, header a i:focus {
   }
 }
 .about .aboutTxt {
-  text-align: right;
+  text-align: left;
+}
+.about .aboutTxt p {
+  margin-bottom: 20px;
 }
 .about .aboutImg {
   display: -webkit-box;
@@ -618,7 +621,7 @@ header a i:hover, header a i:focus {
 }
 @media (max-width: 1080px) {
   .about img {
-    width: 70%;
+    width: 80%;
   }
 }
 

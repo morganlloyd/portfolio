@@ -31,7 +31,12 @@
     }
 
     .aboutTxt {
-        text-align: right;
+        text-align: left;
+
+        p {
+            margin-bottom: 20px;
+        }
+
     }
 
     .aboutImg {
@@ -44,7 +49,7 @@
 
     img {
         @include breakpoint(medium) {
-            width: 70%;
+            width: 80%;
         }
     }
 
