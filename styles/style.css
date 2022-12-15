@@ -530,6 +530,7 @@ header .headerTxt {
 }
 header .headerTxt h1 {
   margin-bottom: 10px;
+  color: #1e1c21;
 }
 header .headerTxt p {
   font-size: 40px;
@@ -730,7 +731,6 @@ header a i:hover, header a i:focus {
 }
 .projects .projectInfo .used {
   margin-bottom: 10px;
-  color: #aba192;
   text-transform: uppercase;
 }
 .projects .projectInfo .projectLinks {
