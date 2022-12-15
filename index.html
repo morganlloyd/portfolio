@@ -11,12 +11,14 @@
     <script src="https://kit.fontawesome.com/c886b8fcce.js" crossorigin="anonymous"></script>
     <!--link to devicon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!--link to aos library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body>
 
 <!--mobile nav begins-->
-    <nav class="mobileNav hidden">
+    <nav class="mobileNav hidden" data-aos="fade-down" data-aos-duration="2000">
             <div class="logo">
                 <a href="index.html">
                     < m >
@@ -46,7 +48,7 @@
 <!--slide out menu ends-->
 
 <!--main nav begins-->
-    <div class="navContainer">
+    <div class="navContainer" data-aos="fade-down" data-aos-duration="2000">
         <div class="logo">
             <a href="index.html">
                 < m >
@@ -65,7 +67,7 @@
 
 <!--header begins-->
     <header class="wrapper">
-            <div class="headerTxt">
+            <div class="headerTxt" data-aos="fade-right" data-aos-duration="3000">
                 <h1>Morgan Lloyd</h1>
                 <p class="title">
                     <span class="highlight">Frontend Developer</span>
@@ -263,7 +265,15 @@
     </footer>
 <!--footer ends-->
 
+
 <!--link to JS file-->
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
+
+<!--initalize aos library-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>

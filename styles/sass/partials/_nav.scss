@@ -104,8 +104,9 @@
 
 .slideOutMenu {
     background-color: $lightBeige;
-    width: 100%;
-    min-height: 100vh;
+    border-bottom: 2px solid black;
+    min-width: 100%;
+    min-height: auto;
     z-index: 100;
     position: fixed;
     top: 0%;

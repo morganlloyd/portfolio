@@ -13,7 +13,7 @@ header {
         p {
             @include fontSize(40);
                 @include breakpoint(smaller) {
-                    @include fontSize(30);
+                    @include fontSize(20);
                 }
             letter-spacing: 3px;
             margin-top: 0px;

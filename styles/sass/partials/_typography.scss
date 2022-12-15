@@ -51,6 +51,9 @@ h1 {
 
 h2 {
     @include fontSize(40);
+    @include breakpoint(smaller) {
+        @include fontSize(30);
+    }
     font-weight: normal;
 }
 
