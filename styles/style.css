@@ -372,6 +372,7 @@ footer P {
 .mobileNav i {
   font-size: 30px;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .hidden {
@@ -467,7 +468,15 @@ footer P {
           justify-content: space-between;
   font-size: 40px;
   font-size: 2rem;
-  padding: 0px 30px;
+  padding: 30px 30px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.slideOutMenu.open {
+  left: 0px;
+}
+.slideOutMenu .menuClose {
+  cursor: pointer;
 }
 .slideOutMenu li {
   margin-bottom: 20px;
@@ -572,14 +581,34 @@ header a i:hover, header a i:focus {
   display: flex;
   gap: 40px;
 }
+@media (max-width: 1080px) {
+  .about .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.about .aboutTxt {
+  text-align: right;
+}
+.about .aboutImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .about .aboutImg, .about .aboutTxt {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.about img {
-  height: 300px;
-  width: 600px;
+@media (max-width: 1080px) {
+  .about img {
+    width: 70%;
+  }
 }
 
 .skills {

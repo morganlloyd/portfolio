@@ -21,25 +21,32 @@
             background: $neonYellow;
         }
     }
-     
+
     .aboutContainer {
         display: flex;
         gap: 40px;
+        @include breakpoint(medium) {
+            flex-direction: column-reverse;
+        }
     }
 
+    .aboutTxt {
+        text-align: right;
+    }
+
+    .aboutImg {
+        display: flex;
+        justify-content: center;
+    }
     .aboutImg, .aboutTxt {
         flex: 1;
     }
 
     img {
-        height: 300px;
-        width: 600px;
+        @include breakpoint(medium) {
+            width: 70%;
+        }
     }
-
-
-
-
-    
 
 
 }

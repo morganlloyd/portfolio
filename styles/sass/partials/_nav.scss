@@ -19,6 +19,7 @@
 
     i {
         @include fontSize(30);
+        cursor: pointer;
     }
 
     
@@ -112,7 +113,16 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     @include fontSize(40);
-    padding: 0px 30px;
+    padding: 30px 30px;
+    transition: 0.2s ease-in;
+    
+    &.open {
+        left: 0px;
+    }
+
+    .menuClose {
+        cursor: pointer;
+    }
     
     li {
         margin-bottom: 20px;
