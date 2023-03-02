@@ -21,6 +21,7 @@
 
     .contactContainer {
         display: flex;
+        flex-direction: row-reverse;
         gap: 30px;
 
         @include breakpoint(medium) {
@@ -41,7 +42,8 @@
     }
     .contactLinks {
         @include fontSize(50);
-        
+        display: flex;
+        justify-content: center;
 
         @include breakpoint(medium) {
             display: flex;
@@ -62,34 +64,34 @@
         
     }
 
-    form {
-        display: flex;
-        text-transform: uppercase;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
+    // form {
+    //     display: flex;
+    //     text-transform: uppercase;
+    //     align-items: center;
+    //     flex-direction: column;
+    //     gap: 20px;
 
-        input, textarea {
-            text-transform: uppercase;
-            width: 90%;
-            margin-bottom: 10px;
-            background-color: transparent;
-            border: 0;
-            border-bottom: 2px solid black;
-            outline: none;
-        }
-        button {
-            width: 30%;
-            text-transform: uppercase;
-            padding: 10px 0px;
-            background-color: transparent;
-            border: 2px solid $black;
-            transition: .2s ease;
+    //     input, textarea {
+    //         text-transform: uppercase;
+    //         width: 90%;
+    //         margin-bottom: 10px;
+    //         background-color: transparent;
+    //         border: 0;
+    //         border-bottom: 2px solid black;
+    //         outline: none;
+    //     }
+    //     button {
+    //         width: 30%;
+    //         text-transform: uppercase;
+    //         padding: 10px 0px;
+    //         background-color: transparent;
+    //         border: 2px solid $black;
+    //         transition: .2s ease;
 
-            &:hover, &:focus {
-                border: 2px solid $neonYellow;
-            }
+    //         &:hover, &:focus {
+    //             border: 2px solid $neonYellow;
+    //         }
             
-        }
-    }
+    //     }
+    // }
 }
