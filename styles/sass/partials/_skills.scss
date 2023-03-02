@@ -21,7 +21,8 @@
     .skillContainer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-content: center;
         gap: 20px;
         
     }
